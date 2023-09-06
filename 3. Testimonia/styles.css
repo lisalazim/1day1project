@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.box{
+    border: 20px solid grey;
+    width: 800px;
+    background-color: white;
+    padding: 30px;   
+    display: block;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+.logo img{
+    width: 200px;
+    align-items: start;
+}
+
+.quote{
+    font-size: 30px;
+    font-family: 'Merriweather'serif;
+}
+
+.circles{
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    font-size: 15px;
+}
+
+.circles i {
+    margin: 5px;
+}
+
+.quoter{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-top: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+}
+
+hr{
+    margin-top: 20px;
+}
+
+.slider{
+    font-size: 30px;
+    padding: 20px;
+}
+
+.slider i{
+    margin-right: 20px;
+}
+
+#box2{
+    display: none;
+}
+
+#box3{
+    display: none;
+}
+
+#box4{
+    display: none;
+}
+
+.fa-angle-right:hover, .fa-angle-left:hover{
+    cursor: pointer;
+    background-color: blue;
+}
+
+.fa-angle-right, .fa-angle-left{
+    padding: 10px;
+}
+
+@media (max-width : 426px) {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    } 
+}
