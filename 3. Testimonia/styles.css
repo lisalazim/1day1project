@@ -26,6 +26,7 @@ section{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 2fr 1fr;
+
 }
 
 .logo img{
@@ -36,6 +37,7 @@ section{
 .quote{
     font-size: 30px;
     font-family: 'Merriweather'serif;
+    height: 230px;
 }
 
 .circles{
@@ -93,8 +95,47 @@ hr{
 }
 
 @media (max-width : 426px) {
+    
+    .wrapper{
+        padding: 12px;
+    } 
+
+    .box{
+        border: 10px solid grey;
+        padding: 20px;   
+    }
+    
     .wrapper{
         display: flex;
         flex-direction: column;
     } 
+
+    .logo img{
+        width: 100px;
+    }    
+    .quote{
+        font-size: 20px;
+        height: 200px;
+    }
+    
+    .circles{
+        font-size: 12px;
+    }
+    
+    .circles i {
+        margin: 3px;
+    }
+    
+    .quoter{
+        font-size: 16px;
+    }
+    
+    .slider{
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    .slider i{
+        margin-right: 10px;
+    }
 }
