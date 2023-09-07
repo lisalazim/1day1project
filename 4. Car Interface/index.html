@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Interface</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@600&family=Merriweather+Sans:wght@400;700&family=Merriweather:wght@400;700&family=Montserrat&family=Noto+Sans+JP:wght@300;400;700&family=Nunito+Sans:opsz@6..12&family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -14,44 +15,66 @@
         <nav>
             <a href="">SETTINGS</a>
             <a href="">NAVIGATION</a>
-            <a href="#phone">PHONE</a>
+            <a href="">PHONE</a>
             <a href="">MUSIC</a>
         </nav>
     </header>
 
 
-    <section class="container">
-        <div class="setting">
-        
-        </div>
-
-        <div class="navigation">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.698270219384!2d-0.1833814!3d51.5370938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761a9f655050a7%3A0xad68731942cabda1!2sAbbey%20Rd.%2C%20London%2C%20Britania%20Raya!5e0!3m2!1sid!2sid!4v1694058750925!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-
+    <section class="container1">
         <div class="phone" id="phone">
+            <div class="call">
+                <i class="fa-solid fa-phone-volume fa-shake" style="color: #e830c7;"></i>
+            </div>
             <div class="img">
                 <img src="https://i.pinimg.com/564x/bc/62/42/bc6242da6ad7bb6d51f64f6e09df50ad.jpg" alt="">
             </div>
-            <p>Bestie <br><span><i>is Calling You...</i></span></p>
+            <p>Bestie <br><span><i id="calling">is Calling You...</i></span> <span id="timer" style="display: none;"><span id="minutes">00</span>:<span id="seconds">00</span></span></p>
             <div class="btn">
-                <button>Accept</button>
-                <button>Decline</button>
+                <button id="accept" onclick="accept()">Accept</button>
+                <button onclick="decline()">Decline</button>
             </div>
         </div>
-
-        <div class="music">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/AEpZbvtiQFs?si=5N1wpT-UqEc8hzS2&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
     </section>
 
-    <section class="speedometer">
-        <div class="circle">
-            
-        </div>
+    <section class="container2">
+        <div class="speedometer">
+            <div class="circle1">
+                <label style="--i: 10" for=""><span class="number">0</span></label>
+                <label style="--i: 11" for=""><span class="number">1</span></label>
+                <label style="--i: 12" for=""><span class="number">2</span></label>
+                <label style="--i: 13" for=""><span class="number">3</span></label>
+                <label style="--i: 14" for=""><span class="number">4</span></label>
+                <label style="--i: 15" for=""><span class="number">5</span></label>
+                <label style="--i: 16" for=""><span class="number">6</span></label>
+                <label style="--i: 17" for=""><span class="number">7</span></label>
+                <label style="--i: 18" for=""><span class="number">8</span></label>
 
+
+                <div class="indicator">
+                    <span class="hand" id="hand"></span>
+                </div>
+            </div>
+
+            <div class="circle2">
+                <label style="--i: 10" for=""><span class="number">0</span></label>
+                <label style="--i: 11" for=""><span class="number">20</span></label>
+                <label style="--i: 12" for=""><span class="number">40</span></label>
+                <label style="--i: 13" for=""><span class="number">60</span></label>
+                <label style="--i: 14" for=""><span class="number">80</span></label>
+                <label style="--i: 15" for=""><span class="number">100</span></label>
+                <label style="--i: 16" for=""><span class="number">120</span></label>
+                <label style="--i: 17" for=""><span class="number">140</span></label>
+                <label style="--i: 18" for=""><span class="number">160</span></label>
+
+                <div class="indicator">
+                    <span class="hand"></span>
+                </div>
+            </div>
+        <div>
     </section>
 
+
+    <script src="script.js"></script>
 </body>
 </html>
