@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: bisque;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.box {
+   border: 3px solid rgb(255, 77, 0);
+   height: 780px;
+   width: 600px;
+   background-color: white;
+   border-radius: 10px;
+   
+}
+
+.heading{
+    border: 3px solid rgb(255, 77, 0);
+    background: orange;
+    padding: 20px;
+    text-align: center;
+}
+
+.heading h3{
+    font-size: 26px;
+}
+
+.file{
+    background-color: white;
+}
+
+.file-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.file-logo{
+    font-size: 60px;
+    padding: 5px;
+
+}
+
+
+.file-loading{
+    padding: 10px;
+
+}
+
+.file-loading p{
+    font-size: 28px;
+    
+}
+
+.wrapper-loading{
+    background-color: orange;
+    width: 400px;
+    height: 25px;
+    border-radius: 2px
+}
+
+.loading{
+    background-color: rgb(255, 77, 0);
+    width: 80%;
+    height: 96%;
+}
+
+#loading2, #loading3{
+    width: 100%;
+}
+
+.file-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    
+}
+
+.file-action i {
+    font-size: 25px;
+    padding: 8px;
+    padding-bottom: 0;
+
+  
+}
+
+.file-action i:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.upload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.upload-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(255, 77, 0);
+    border-radius: 20px;
+    height: 300px;
+    width: 290px;
+    background-color: aliceblue;
+}
+
+.upload i{
+    font-size: 100px;
+    padding: 10px;
+   
+}
+
+.upload h3{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.upload button{
+    padding: 16px 25px;
+    font-size: 20px;
+    border: 6px solid rgb(255, 77, 0);
+    border-radius: 20px;
+    background-color: orange;
+}
+
+.upload button:hover{
+    cursor: pointer;
+}

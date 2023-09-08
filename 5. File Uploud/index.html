@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    <section class="container">
+        <div class="box">
+            <div class="heading">
+                <h3>FILE UPLOAD</h3>
+            </div>
+            <div class="file">
+                <div class="file-items" id="file1">
+                    <div class="file-logo">
+                        <i class="fa-regular fa-file-pdf"></i>
+                    </div>
+                    <div class="file-loading">
+                        <p>Name.pdf</p>
+                        <div class="wrapper-loading">
+                            <hr class="loading">
+                        </div>    
+                    </div>
+                    <div class="file-action">
+                        <i class="fa-regular fa-circle-pause" title="Pause"></i>
+                        <i class="fa-solid fa-trash-can" title="remove"></i>
+                    </div>
+                </div>
+                <div class="file-items" id="file2">
+                    <div class="file-logo">
+                        <i class="fa-regular fa-file-pdf"></i>
+                    </div>
+                    <div class="file-loading">
+                        <p>Name2.pdf</p>
+                        <div class="wrapper-loading">
+                            <hr class="loading" id="loading2">
+                        </div>    
+                    </div>
+                    <div class="file-action">
+                        <i class="fa-regular fa-circle-pause" title="Pause"></i>
+                        <i class="fa-solid fa-trash-can" title="remove"></i>
+                    </div>
+                </div>
+                <div class="file-items" id="file3">
+                    <div class="file-logo">
+                        <i class="fa-regular fa-file-pdf"></i>
+                    </div>
+                    <div class="file-loading">
+                        <p>Name.pdf</p>
+                        <div class="wrapper-loading">
+                            <hr class="loading" id="loading3">
+                        </div>    
+                    </div>
+                    <div class="file-action">
+                        <i class="fa-regular fa-circle-pause" title="Pause"></i>
+                        <i class="fa-solid fa-trash-can" title="remove"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="upload">
+                <div class="upload-box">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <h3>Drag and Drop files here</h3>
+                    <h3>or</h3>
+                    <button>Select Files</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
