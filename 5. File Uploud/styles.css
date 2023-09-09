@@ -16,7 +16,6 @@ body{
 
 .box {
    border: 3px solid rgb(255, 77, 0);
-   height: 780px;
    width: 600px;
    background-color: white;
    border-radius: 10px;
@@ -81,9 +80,10 @@ body{
 
 .file-action {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: start;
+    align-items: center;
+    margin-top: 20px;
     
 }
 
@@ -141,3 +141,5 @@ body{
 .upload button:hover{
     cursor: pointer;
 }
+
+

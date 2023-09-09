@@ -21,14 +21,13 @@
                         <i class="fa-regular fa-file-pdf"></i>
                     </div>
                     <div class="file-loading">
-                        <p>Name.pdf</p>
+                        <p>Name1.pdf</p>
                         <div class="wrapper-loading">
                             <hr class="loading">
                         </div>    
                     </div>
                     <div class="file-action">
-                        <i class="fa-regular fa-circle-pause" title="Pause"></i>
-                        <i class="fa-solid fa-trash-can" title="remove"></i>
+                        <i onclick="removeFile1()" class="fa-solid fa-trash-can" title="remove"></i>
                     </div>
                 </div>
                 <div class="file-items" id="file2">
@@ -42,8 +41,7 @@
                         </div>    
                     </div>
                     <div class="file-action">
-                        <i class="fa-regular fa-circle-pause" title="Pause"></i>
-                        <i class="fa-solid fa-trash-can" title="remove"></i>
+                        <i onclick="removeFile2()" class="fa-solid fa-trash-can" title="remove"></i>
                     </div>
                 </div>
                 <div class="file-items" id="file3">
@@ -51,26 +49,27 @@
                         <i class="fa-regular fa-file-pdf"></i>
                     </div>
                     <div class="file-loading">
-                        <p>Name.pdf</p>
+                        <p>Name3.pdf</p>
                         <div class="wrapper-loading">
                             <hr class="loading" id="loading3">
                         </div>    
                     </div>
                     <div class="file-action">
-                        <i class="fa-regular fa-circle-pause" title="Pause"></i>
-                        <i class="fa-solid fa-trash-can" title="remove"></i>
+                        <i onclick="removeFile3()" class="fa-solid fa-trash-can" title="remove"></i>
                     </div>
                 </div>
             </div>
 
-            <div class="upload">
-                <div class="upload-box">
+            <form class="upload">
+                <div class="upload-box" id="uploadBox">
                     <i class="fa-solid fa-cloud-arrow-up"></i>
                     <h3>Drag and Drop files here</h3>
                     <h3>or</h3>
-                    <button>Select Files</button>
+                    <button id="selectFileButton">Select File</button>
+
+                    <input type="file" id="fileInput" style="display: none;">
                 </div>
-            </div>
+            </form>
         </div>
     </section>
     
